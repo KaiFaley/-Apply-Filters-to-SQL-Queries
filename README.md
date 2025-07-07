@@ -61,7 +61,7 @@ The following code demonstrates how I created a SQL query to filter for login at
 </b>
 
 <b>
-<h2></h2>4. Retrieve employees in Marketing: <br/></h2>
+<h2>4. Retrieve employees in Marketing: <br/></h2>
 <b/> <p></p>
 <b>My team wants to update the computers for certain employees in the Marketing department. To do this, I have to get information on which employee machines to update.
 
@@ -75,7 +75,7 @@ The following code demonstrates how I created a SQL query to filter for employee
 </b>
 
 <b>
-<h2></h2>5. Retrieve employees in Finance or Sales: <br/></h2>
+<h2>5. Retrieve employees in Finance or Sales: <br/></h2>
 <b/> <p></p>
 <b>The machines for employees in the Finance and Sales departments also need to be updated. Since a different security update is needed, I have to get information on employees only from these two departments.
 
@@ -89,7 +89,7 @@ The following code demonstrates how I created a SQL query to filter for employee
 </b>
 
 <b>
-<h2></h2>6. Retrieve all employees not in IT: <br/></h2>
+<h2>6. Retrieve all employees not in IT: <br/></h2>
 <b/> <p></p>
 <b>My team needs to make one more security update on employees who are not in the Information Technology department. To make the update, I first have to get information on these employees.
 
