@@ -1,58 +1,71 @@
-<h1>JWipe - Disk Sanitization</h1>
+<h1>🔐 Apply Filters to SQL Queries</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
-<h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+<h2>📘 Project Description</h2>
+My organization is working to improve system security. As part of this effort, I investigate potential security incidents, apply system updates, and analyze login activity. This project demonstrates how I used SQL queries with filters to retrieve specific security-related data.
 <br />
 
 
-<h2>Languages and Utilities Used</h2>
+<h2>Language and Utility Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
-
+- <b>SQL</b> 
+  
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Online Lab</b> (21H2)
 
-<h2>Program walk-through:</h2>
+<h2>🧪 Use Cases & SQL Queries:</h2>
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+<b>
+1. 🕕 Retrieve After-Hours Failed Login Attempts: <br/>
+<b/> <p></p>
+<b>There was a potential security incident that occurred after business hours (after 18:00). All after hours login attempts that failed need to be investigated.
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+The following code demonstrates how I created a SQL query to filter for failed login attempts that occurred after business hours.
+</b>
+
+![image alt](https://github.com/KaiFaley/-Apply-Filters-to-SQL-Queries/blob/ad9ac328b6378f1791f22a4249c5570b0fda0574/sqlimage1.png)
+
+<b/> <p></p>
+<b>The first part of the screenshot is my query, and the second part is a portion of the output. This query filters for failed login attempts that occurred after 18:00. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with an AND operator to filter my results to output only login attempts that occurred after 18:00 and were unsuccessful. The first condition is login_time > '18:00', which filters for the login attempts that occurred after 18:00. The second condition is success = FALSE, which filters for the failed login attempts. 
+</b>
+
+
+<b>
+2. 📅 Retrieve Login Attempts on Specific Dates: <br/>
+<b/> <p></p>
+<b>A suspicious event occurred on 2022-05-09. Any login activity that happened on 2022-05-09 or on the day before needs to be investigated.
+
+The following code demonstrates how I created a SQL query to filter for login attempts that occurred on specific dates.
+
+</b>
+
+![image alt](https://github.com/KaiFaley/-Apply-Filters-to-SQL-Queries/blob/ad9ac328b6378f1791f22a4249c5570b0fda0574/sqlimage1.png)
+
+
+
+<h2>🧪 Use Cases & SQL Queries:</h2>
+
+<b>
+1. 🕕 Retrieve After-Hours Failed Login Attempts: <br/>
+<b/> <p></p>
+<b>There was a potential security incident that occurred after business hours (after 18:00). All after hours login attempts that failed need to be investigated.
+
+The following code demonstrates how I created a SQL query to filter for failed login attempts that occurred after business hours.
+</b>
+
+![image alt](https://github.com/KaiFaley/-Apply-Filters-to-SQL-Queries/blob/ad9ac328b6378f1791f22a4249c5570b0fda0574/sqlimage1.png)
+
+
+
+<h2>🧪 Use Cases & SQL Queries:</h2>
+
+<b>
+1. 🕕 Retrieve After-Hours Failed Login Attempts: <br/>
+<b/> <p></p>
+<b>There was a potential security incident that occurred after business hours (after 18:00). All after hours login attempts that failed need to be investigated.
+
+The following code demonstrates how I created a SQL query to filter for failed login attempts that occurred after business hours.
+</b>
+
+![image alt](https://github.com/KaiFaley/-Apply-Filters-to-SQL-Queries/blob/ad9ac328b6378f1791f22a4249c5570b0fda0574/sqlimage1.png)
