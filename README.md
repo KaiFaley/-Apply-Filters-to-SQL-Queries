@@ -40,18 +40,21 @@ The following code demonstrates how I created a SQL query to filter for login at
 
 </b>
 
-![image alt](https://github.com/KaiFaley/-Apply-Filters-to-SQL-Queries/blob/ad9ac328b6378f1791f22a4249c5570b0fda0574/sqlimage1.png)
+![image alt](https://github.com/KaiFaley/-Apply-Filters-to-SQL-Queries/blob/d202f66407b373dcd961b6a4ee892de8b2f66b3d/sqlimage2.png)
 
-
+<b/> <p></p>
+<b>The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred on 2022-05-09 or 2022-05-08. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with an OR operator to filter my results to output only login attempts that occurred on either 2022-05-09 or 2022-05-08. The first condition is login_date = '2022-05-09', which filters for logins on 2022-05-09. The second condition is login_date = '2022-05-08', which filters for logins on 2022-05-08.
+</b>
 
 <h2>🧪 Use Cases & SQL Queries:</h2>
 
 <b>
-1. 🕕 Retrieve After-Hours Failed Login Attempts: <br/>
+1. Retrieve login attempts outside of Mexico: <br/>
 <b/> <p></p>
-<b>There was a potential security incident that occurred after business hours (after 18:00). All after hours login attempts that failed need to be investigated.
+<b>After investigating the organization’s data on login attempts, I believe there is an issue with the login attempts that occurred outside of Mexico. These login attempts should be investigated.
 
-The following code demonstrates how I created a SQL query to filter for failed login attempts that occurred after business hours.
+The following code demonstrates how I created a SQL query to filter for login attempts that occurred outside of Mexico. 
+
 </b>
 
 ![image alt](https://github.com/KaiFaley/-Apply-Filters-to-SQL-Queries/blob/ad9ac328b6378f1791f22a4249c5570b0fda0574/sqlimage1.png)
